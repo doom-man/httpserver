@@ -1,5 +1,6 @@
     
 很难受 这个程序并没有排上用场，因为只能他能做的只是打开目录内的全部文件 ， 而我们只需要当前目录的文件。所以要做一些修改。
+```
     #include <stdio.h>
     #include <stdlib.h>
     #include <sys/types.h>
@@ -32,9 +33,10 @@
         closedir(dp);
         return 0;
     }
-
+```
 
 细节说明：
+```
 
     struct __dirstream{
         void *__fd;
@@ -128,7 +130,7 @@
         return 0;
 
     }
-
+```
 
 
 
